@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ratnaksh Tyagi — AI Engineer | Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Ratnaksh Tyagi — AI Engineer specializing in RAG architectures, conversational agents, prompt engineering, and LLM-based applications." />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Phosphor Icons -->
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/regular/style.css" />
+</head>
+
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#hero" class="nav-logo">RT.</a>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- ========== HERO ========== -->
+  <section id="hero">
+    <canvas class="hero-canvas" id="heroCanvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="dot"></span>
+        Available for opportunities
+      </div>
+      <h1>
+        Hi, I'm <span class="gradient-text">Ratnaksh</span>
+      </h1>
+      <p class="hero-tagline">
+        <span id="typingText"></span><span class="cursor"></span>
+      </p>
+      <div class="hero-buttons">
+        <a href="mailto:ratnakshtyagi69@gmail.com" class="btn btn-primary">
+          <i class="ph ph-envelope-simple"></i> Get In Touch
+        </a>
+        <a href="https://www.linkedin.com/in/ratnaksh-tyagi-bb350b371" target="_blank" class="btn btn-outline">
+          <i class="ph ph-linkedin-logo"></i> LinkedIn
+        </a>
+        <a href="https://github.com/ratnaksh12" target="_blank" class="btn btn-outline">
+          <i class="ph ph-github-logo"></i> GitHub
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>About Me</h2>
+        <p>A snapshot of who I am and what I bring to the table.</p>
+        <div class="section-divider"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-image-wrapper reveal">
+          <img src="profile.png" alt="Ratnaksh Tyagi" class="about-image"
+            style="margin-top: 25px; width: 105%; display: block; margin-left: auto; margin-right: auto;" />
+        </div>
+        <div class="about-text reveal">
+          <h3>AI Engineer &amp; Data Analyst</h3>
+          <p>
+            AI Engineer with <strong>2+ years of experience</strong> building RAG architectures and state-aware
+            conversational agents at <strong>Xapotech Systems</strong>. Expert in prompt/context engineering and
+            metadata-driven memory to optimize LLM reliability and token efficiency. I combine deep technical skills
+            with a passion for creating intelligent, production-grade AI systems.
+          </p>
+          <p>
+            With a <strong>B.Tech in Computer Science</strong> from Jaypee Institute of Information Technology, I bridge
+            the gap between cutting-edge AI research and practical, data-driven product development.
+          </p>
+          <div class="about-stats">
+            <div class="stat-card reveal">
+              <div class="number">2+</div>
+              <div class="label">Years Experience</div>
+            </div>
+            <div class="stat-card reveal">
+              <div class="number">4+</div>
+              <div class="label">AI Projects</div>
+            </div>
+            <div class="stat-card reveal">
+              <div class="number">B.Tech</div>
+              <div class="label">Computer Science</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Technical Skills</h2>
+        <p>Technologies and methodologies I work with daily.</p>
+        <div class="section-divider"></div>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-card reveal">
+          <div class="skill-card-icon">🧠</div>
+          <h3>Prompt &amp; Context Engineering</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Prompt Engineering</span>
+            <span class="skill-tag">Context Engineering</span>
+            <span class="skill-tag">System Prompts</span>
+            <span class="skill-tag">Tool Prompts</span>
+            <span class="skill-tag">Memory Design</span>
+            <span class="skill-tag">Multi-turn Logic</span>
+            <span class="skill-tag">Token Optimization</span>
+            <span class="skill-tag">Prompt Evaluation</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card-icon">🔗</div>
+          <h3>LLMs &amp; RAG Systems</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Large Language Models</span>
+            <span class="skill-tag">RAG</span>
+            <span class="skill-tag">LangChain</span>
+            <span class="skill-tag">FAISS</span>
+            <span class="skill-tag">Vector Databases</span>
+            <span class="skill-tag">Context Retrieval</span>
+            <span class="skill-tag">Provenance Grounding</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card-icon">💻</div>
+          <h3>Programming &amp; AI Development</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">NLP</span>
+            <span class="skill-tag">Flask</span>
+            <span class="skill-tag">Streamlit</span>
+            <span class="skill-tag">Groq API</span>
+            <span class="skill-tag">Relevance AI</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card-icon">📊</div>
+          <h3>Data &amp; Analytics</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">Pandas</span>
+            <span class="skill-tag">NumPy</span>
+            <span class="skill-tag">Data Analysis</span>
+            <span class="skill-tag">Data Cleaning</span>
+            <span class="skill-tag">KPI Monitoring</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card-icon">☁️</div>
+          <h3>Platforms &amp; Tools</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">GCP</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">Next.js</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">TypeScript</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EXPERIENCE ========== -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Experience</h2>
+        <p>Where I've been building and growing.</p>
+        <div class="section-divider"></div>
+      </div>
+      <div class="timeline">
+
+        <!-- AI Engineer -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <span class="timeline-date">March 2024 — Present</span>
+          <div class="timeline-card">
+            <h3>AI Engineer</h3>
+            <div class="company">Xapotech Systems Pvt Ltd</div>
+            <div class="location">Noida, India</div>
+            <ul>
+              <li>Designed and engineered system prompts, tool prompts, and layered context structures to improve output
+                reliability, token efficiency, and response consistency in LLM-based applications.</li>
+              <li>Built Retrieval-Augmented Generation (RAG) pipelines using LangChain and FAISS, enabling grounded,
+                source-aware responses with clear provenance.</li>
+              <li>Developed multi-turn, state-aware conversational agents with prompt chains and decision logic to
+                handle complex user workflows.</li>
+              <li>Implemented conversational memory and context management strategies to maintain continuity across
+                sessions and interactions.</li>
+              <li>Evaluated and refined prompts through iterative testing, edge-case analysis, and basic guardrails to
+                reduce hallucinations and unsafe responses.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Data Analyst -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <span class="timeline-date">Nov 2023 — Feb 2024</span>
+          <div class="timeline-card">
+            <h3>Data Analyst</h3>
+            <div class="company">Xapotech Systems Pvt Ltd</div>
+            <div class="location">Noida, India</div>
+            <ul>
+              <li>Analyzed complex datasets to uncover trends and insights, enhancing data-driven decision-making for
+                client projects.</li>
+              <li>Developed and deployed AI-driven anomaly detection systems to monitor KPIs in real-time, identifying
+                critical deviations.</li>
+              <li>Built an AI agent that generates pre-sales call reports, significantly reducing research time for
+                sales teams.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Projects</h2>
+        <p>Things I've built that showcase my skills.</p>
+        <div class="section-divider"></div>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Investor Prep AI -->
+        <div class="project-card reveal">
+          <div class="project-card-header">
+            <div class="project-card-icon">🚀</div>
+          </div>
+          <div class="project-card-body">
+            <h3>Investor Prep AI</h3>
+            <p>An AI-powered pitch simulator using LLMs (Groq) that provides founders with real-time evaluation and
+              investment readiness feedback. Features context-aware prompt logic to simulate realistic investor personas
+              and a multi-dimensional scoring engine for actionable metrics.</p>
+            <div class="project-tech">
+              <span>LLMs</span>
+              <span>Prompt Engineering</span>
+              <span>RAG</span>
+              <span>React</span>
+              <span>Groq</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- RT Sales Copilot -->
+        <div class="project-card reveal">
+          <div class="project-card-header">
+            <div class="project-card-icon">🤖</div>
+          </div>
+          <div class="project-card-body">
+            <h3>RT Sales Copilot Agent</h3>
+            <p>Engineered system and task-specific prompts to analyze company websites and LinkedIn profiles for
+              pre-sales intelligence. Designed prompt chains to extract, summarize, and contextualize business
+              information into structured call preparation reports.</p>
+            <div class="project-tech">
+              <span>Prompt Engineering</span>
+              <span>Relevance AI</span>
+              <span>NLP</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Smart Calendar -->
+        <div class="project-card reveal">
+          <div class="project-card-header">
+            <div class="project-card-icon">📅</div>
+          </div>
+          <div class="project-card-body">
+            <h3>Smart Calendar Scheduling Agent</h3>
+            <p>A conversational AI agent capable of managing calendar events through multi-turn natural language
+              interactions. Implements intent recognition and context persistence to handle scheduling modifications,
+              clarifications, and follow-up actions.</p>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>Flask</span>
+              <span>NLP</span>
+              <span>LLM</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- StudyPath -->
+        <div class="project-card reveal">
+          <div class="project-card-header">
+            <div class="project-card-icon">🎓</div>
+          </div>
+          <div class="project-card-body">
+            <h3>StudyPath: Study Abroad Platform</h3>
+            <p>AI-assisted counselor leveraging Gemini APIs for personalized university recommendations. Features a
+              real-time application tracking dashboard managing milestones for 100+ global institutions with automated
+              status updates.</p>
+            <div class="project-tech">
+              <span>Next.js</span>
+              <span>Node.js</span>
+              <span>TypeScript</span>
+              <span>Prisma</span>
+              <span>Gemini API</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EDUCATION ========== -->
+  <section id="education">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Education &amp; Certifications</h2>
+        <p>My academic foundation and continuous learning.</p>
+        <div class="section-divider"></div>
+      </div>
+      <div class="edu-grid">
+        <div class="edu-card reveal">
+          <div class="edu-card-icon">🎓</div>
+          <h3>Bachelor of Technology — Computer Science</h3>
+          <div class="institution">Jaypee Institute of Information Technology, Noida</div>
+          <div class="year">2019 — 2023</div>
+        </div>
+        <div class="edu-card reveal">
+          <div class="edu-card-icon">📜</div>
+          <h3>Generative AI</h3>
+          <div class="institution">Udemy Certification</div>
+          <div class="year">Completed</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Get In Touch</h2>
+        <p>Have a project in mind? Let's talk.</p>
+        <div class="section-divider"></div>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <h3>Let's Build Something Together</h3>
+          <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of something
+            amazing.</p>
+          <div class="contact-links">
+            <a href="mailto:ratnakshtyagi69@gmail.com" class="contact-link">
+              <div class="contact-link-icon"><i class="ph ph-envelope-simple"></i></div>
+              <div class="contact-link-text">
+                <div class="label">Email</div>
+                <div class="value">ratnakshtyagi69@gmail.com</div>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/ratnaksh-tyagi-bb350b371" target="_blank" class="contact-link">
+              <div class="contact-link-icon"><i class="ph ph-linkedin-logo"></i></div>
+              <div class="contact-link-text">
+                <div class="label">LinkedIn</div>
+                <div class="value">Ratnaksh Tyagi</div>
+              </div>
+            </a>
+            <a href="tel:+919997668836" class="contact-link">
+              <div class="contact-link-icon"><i class="ph ph-phone"></i></div>
+              <div class="contact-link-text">
+                <div class="label">Phone</div>
+                <div class="value">+91 9997668836</div>
+              </div>
+            </a>
+            <div class="contact-link">
+              <div class="contact-link-icon"><i class="ph ph-map-pin"></i></div>
+              <div class="contact-link-text">
+                <div class="label">Location</div>
+                <div class="value">Meerut, India</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form reveal" id="contactForm" action="https://formspree.io/f/mreykdoq" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" placeholder="Your Email" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="text" name="_subject" placeholder="Subject" />
+          </div>
+          <div class="form-group">
+            <textarea name="message" placeholder="Your Message" required></textarea>
+          </div>
+          <input type="hidden" name="_next" value="" />
+          <button type="submit" class="btn btn-primary btn-submit">
+            <i class="ph ph-paper-plane-tilt"></i> Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-social">
+          <a href="mailto:ratnakshtyagi69@gmail.com" aria-label="Email"><i class="ph ph-envelope-simple"></i></a>
+          <a href="https://www.linkedin.com/in/ratnaksh-tyagi-bb350b371" target="_blank" aria-label="LinkedIn"><i
+              class="ph ph-linkedin-logo"></i></a>
+          <a href="https://github.com/ratnaksh12" target="_blank" aria-label="GitHub"><i
+              class="ph ph-github-logo"></i></a>
+        </div>
+        <p class="footer-text">
+          Designed &amp; built with <span class="heart">♥</span> by Ratnaksh Tyagi &copy; 2026
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
