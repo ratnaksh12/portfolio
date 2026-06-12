@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ratnaksh Tyagi — Prompt & Context Engineer at Plasma. I design how machines read, remember, and respond: RAG pipelines, state-aware agents, and production prompt systems.">
+    <meta name="author" content="Ratnaksh Tyagi">
+    <meta property="og:title" content="Ratnaksh Tyagi — Prompt & Context Engineer">
+    <meta property="og:description" content="I design how machines read, remember, and respond.">
+    <meta property="og:type" content="website">
+    <title>Ratnaksh Tyagi — Prompt &amp; Context Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=Newsreader:ital,opsz,wght@1,6..72,300..500&family=Fragment+Mono:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.165.0/build/three.module.js"
+        }
+    }
+    </script>
+</head>
+<body>
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- ===== Header ===== -->
+    <header class="site-head" id="siteHead">
+        <a href="#top" class="head-mark" aria-label="Back to top">
+            <span class="head-mark-rt">RT</span>
+            <span class="head-mark-role">prompt&nbsp;engineer</span>
+        </a>
+        <nav class="head-nav" id="headNav" aria-label="Main navigation">
+            <a href="#now" class="head-link">Now</a>
+            <a href="#work" class="head-link">Work</a>
+            <a href="#projects" class="head-link">Projects</a>
+            <a href="#stack" class="head-link">Stack</a>
+            <a href="#contact" class="head-link head-link-cta">Contact</a>
+        </nav>
+        <button class="head-toggle" id="headToggle" aria-expanded="false" aria-controls="headNav" aria-label="Toggle menu">
+            <span></span><span></span>
+        </button>
+    </header>
+
+    <main id="main">
+
+        <!-- ===== Hero: the system prompt ===== -->
+        <section class="hero" id="top">
+            <div class="hero-canvas" id="heroCanvas" aria-hidden="true"></div>
+            <div class="hero-grid">
+                <div class="hero-copy">
+                    <p class="hero-eyebrow reveal">
+                        <span class="tag-role">role: system</span>
+                        <span class="eyebrow-dot" aria-hidden="true">·</span>
+                        <span>Meerut, IN</span>
+                        <span class="eyebrow-dot" aria-hidden="true">·</span>
+                        <span>v2026.06</span>
+                    </p>
+                    <h1 class="hero-thesis reveal">
+                        You are <span class="nowrap">Ratnaksh Tyagi.</span><br>
+                        You design how machines
+                        <em>read</em>, <em>remember</em>
+                        and <em>respond</em>.
+                    </h1>
+                    <p class="hero-sub reveal">
+                        Prompt &amp; context engineer at <strong>Plasma</strong>. 2+ years building
+                        RAG pipelines, state-aware conversational agents, and prompt systems
+                        that hold up in production — not just in the demo.
+                    </p>
+                    <div class="hero-cta reveal">
+                        <a class="btn-solid" href="#projects">See shipped work</a>
+                        <a class="btn-ghost" href="Resume.pdf" target="_blank" rel="noopener">Résumé&nbsp;<span aria-hidden="true">↗</span></a>
+                    </div>
+                </div>
+
+                <figure class="hero-fig reveal">
+                    <div class="fig-frame">
+                        <img src="Man_wearing_sweater_smiling_5182691c3a.jpeg"
+                             alt="Black and white portrait of Ratnaksh Tyagi"
+                             width="576" height="1024" fetchpriority="high">
+                    </div>
+                    <figcaption class="fig-caption">fig. 01 — the engineer</figcaption>
+                    <dl class="fig-meta">
+                        <div><dt>currently</dt><dd>AI Prompt Engineer, Plasma</dd></div>
+                        <div><dt>previously</dt><dd>Xapotech Systems, Noida</dd></div>
+                        <div><dt>writing</dt><dd>3,400+ readers on LinkedIn</dd></div>
+                        <div><dt>certified</dt><dd>Building with the Claude API</dd></div>
+                    </dl>
+                </figure>
+            </div>
+        </section>
+
+        <!-- token stream ticker -->
+        <div class="ticker" aria-hidden="true">
+            <div class="ticker-track">
+                <span class="ticker-seg">ctx.load ✓&ensp;·&ensp;system → user → assistant&ensp;·&ensp;retrieval: 4 docs grounded&ensp;·&ensp;memory: persistent&ensp;·&ensp;temperature 0.2&ensp;·&ensp;token budget optimized&ensp;·&ensp;guardrails: on&ensp;·&ensp;provenance: cited&ensp;·&ensp;state: aware&ensp;·&ensp;hallucinations: caught in eval&ensp;·&ensp;</span>
+                <span class="ticker-seg">ctx.load ✓&ensp;·&ensp;system → user → assistant&ensp;·&ensp;retrieval: 4 docs grounded&ensp;·&ensp;memory: persistent&ensp;·&ensp;temperature 0.2&ensp;·&ensp;token budget optimized&ensp;·&ensp;guardrails: on&ensp;·&ensp;provenance: cited&ensp;·&ensp;state: aware&ensp;·&ensp;hallucinations: caught in eval&ensp;·&ensp;</span>
+            </div>
+        </div>
+
+        <!-- ===== Now / statement ===== -->
+        <section class="sect" id="now">
+            <header class="sect-head reveal">
+                <span class="sect-label">now.context</span>
+                <span class="sect-tokens" aria-hidden="true">tokens ≈ 0.4k</span>
+            </header>
+            <div class="now-grid">
+                <p class="now-statement reveal">
+                    Most AI products fail in the gap between
+                    <em>what the model can do</em> and
+                    <em>what it was told to do</em>.
+                    I work in that gap.
+                </p>
+                <div class="now-body reveal">
+                    <p>
+                        At Plasma I engineer the layer between users and large language
+                        models: system prompts, tool definitions, retrieval, and memory.
+                        The goal is always the same — responses that are grounded,
+                        consistent, and cheap in tokens.
+                    </p>
+                    <p>
+                        Before that, two years at Xapotech Systems building RAG pipelines
+                        with LangChain and FAISS, multi-turn agents with real decision
+                        logic, and anomaly-detection systems watching live KPIs.
+                        Off the clock I ship indie AI apps and write about agentic
+                        workflows, MCP, and prompt optimization.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Experience ===== -->
+        <section class="sect" id="work">
+            <header class="sect-head reveal">
+                <span class="sect-label">experience.log</span>
+                <span class="sect-tokens" aria-hidden="true">tokens ≈ 1.8k</span>
+            </header>
+            <h2 class="sect-title reveal">Session history</h2>
+
+            <ol class="xp-list">
+                <li class="xp-row reveal">
+                    <div class="xp-when">
+                        <span class="xp-range">2026 — now</span>
+                        <span class="xp-badge">active</span>
+                    </div>
+                    <div class="xp-what">
+                        <h3 class="xp-role">AI Prompt Engineer <span class="xp-co">— Plasma</span></h3>
+                        <p class="xp-desc">
+                            Designing prompt and context systems for production LLM
+                            features — system prompts, tool prompts, and layered context
+                            structures tuned for reliability and token efficiency.
+                        </p>
+                        <ul class="xp-tags" aria-label="Focus areas">
+                            <li>context engineering</li><li>tool prompts</li><li>evals</li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="xp-row reveal">
+                    <div class="xp-when">
+                        <span class="xp-range">2024 — 2026</span>
+                    </div>
+                    <div class="xp-what">
+                        <h3 class="xp-role">Prompt Engineer <span class="xp-co">— Xapotech Systems, Noida</span></h3>
+                        <p class="xp-desc">
+                            Built RAG pipelines with LangChain + FAISS for grounded,
+                            source-aware answers with clear provenance. Developed
+                            multi-turn, state-aware agents with prompt chains and decision
+                            logic; shipped an AI agent generating pre-sales call reports
+                            that cut research time for sales teams. Deployed AI-driven
+                            anomaly detection monitoring KPIs in real time.
+                        </p>
+                        <ul class="xp-tags" aria-label="Focus areas">
+                            <li>RAG</li><li>LangChain</li><li>FAISS</li><li>agents</li><li>memory design</li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="xp-row reveal">
+                    <div class="xp-when">
+                        <span class="xp-range">2023 — 2024</span>
+                    </div>
+                    <div class="xp-what">
+                        <h3 class="xp-role">Data Analyst <span class="xp-co">— Xapotech Systems</span></h3>
+                        <p class="xp-desc">
+                            Analyzed complex client datasets to surface trends and drive
+                            decisions — the data instincts that now shape how I evaluate
+                            and ground model outputs.
+                        </p>
+                        <ul class="xp-tags" aria-label="Focus areas">
+                            <li>SQL</li><li>pandas</li><li>KPI monitoring</li>
+                        </ul>
+                    </div>
+                </li>
+            </ol>
+        </section>
+
+        <!-- ===== Projects ===== -->
+        <section class="sect" id="projects">
+            <header class="sect-head reveal">
+                <span class="sect-label">projects.shipped</span>
+                <span class="sect-tokens" aria-hidden="true">tokens ≈ 2.1k</span>
+            </header>
+            <h2 class="sect-title reveal">Shipped work</h2>
+
+            <div class="prj-list">
+                <article class="prj-row reveal">
+                    <div class="prj-head">
+                        <h3 class="prj-name">Investor Prep AI</h3>
+                        <p class="prj-kind">pitch simulator</p>
+                    </div>
+                    <div class="prj-body">
+                        <p>
+                            An AI pitch simulator that puts founders in front of realistic
+                            investor personas. Context-aware prompt logic generates
+                            tailored VC questions from the pitch itself, and a
+                            multi-dimensional scoring engine turns the session into
+                            actionable readiness metrics.
+                        </p>
+                        <ul class="prj-tags" aria-label="Built with">
+                            <li>Groq</li><li>prompt engineering</li><li>RAG</li><li>React</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="prj-row reveal">
+                    <div class="prj-head">
+                        <h3 class="prj-name">RT Sales Copilot</h3>
+                        <p class="prj-kind">pre-sales agent</p>
+                    </div>
+                    <div class="prj-body">
+                        <p>
+                            An agent that reads a company's website and LinkedIn presence
+                            and returns a structured call-prep report. Prompt chains
+                            extract, summarize, and contextualize business intelligence —
+                            sales teams walk into calls already briefed.
+                        </p>
+                        <ul class="prj-tags" aria-label="Built with">
+                            <li>Relevance AI</li><li>prompt chains</li><li>summarization</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="prj-row reveal">
+                    <div class="prj-head">
+                        <h3 class="prj-name">Smart Calendar Agent</h3>
+                        <p class="prj-kind">conversational scheduler</p>
+                    </div>
+                    <div class="prj-body">
+                        <p>
+                            A conversational agent that manages calendar events through
+                            multi-turn natural language — intent recognition and context
+                            persistence handle modifications, clarifications, and
+                            follow-ups without losing the thread.
+                        </p>
+                        <ul class="prj-tags" aria-label="Built with">
+                            <li>Python</li><li>Flask</li><li>NLP</li><li>state design</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="prj-row reveal">
+                    <div class="prj-head">
+                        <h3 class="prj-name">StudyPath</h3>
+                        <p class="prj-kind">study-abroad platform</p>
+                    </div>
+                    <div class="prj-body">
+                        <p>
+                            A full-stack platform with an AI counselor on Gemini that
+                            recommends universities from complex academic profiles, plus a
+                            real-time application tracker covering milestones across 100+
+                            global institutions.
+                        </p>
+                        <ul class="prj-tags" aria-label="Built with">
+                            <li>Next.js</li><li>Node.js</li><li>TypeScript</li><li>Prisma</li><li>Gemini</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ===== Stack ===== -->
+        <section class="sect" id="stack">
+            <header class="sect-head reveal">
+                <span class="sect-label">context.window</span>
+                <span class="sect-tokens" aria-hidden="true">tokens ≈ 0.9k</span>
+            </header>
+            <h2 class="sect-title reveal">The toolchain</h2>
+
+            <div class="stack-grid">
+                <div class="stack-col reveal">
+                    <h3 class="stack-h">prompt &amp; context</h3>
+                    <ul class="stack-ul">
+                        <li>System &amp; tool prompts</li>
+                        <li>Context engineering</li>
+                        <li>Memory design</li>
+                        <li>Multi-turn logic</li>
+                        <li>Token optimization</li>
+                        <li>Prompt evaluation</li>
+                    </ul>
+                </div>
+                <div class="stack-col reveal">
+                    <h3 class="stack-h">llms &amp; retrieval</h3>
+                    <ul class="stack-ul">
+                        <li>RAG architectures</li>
+                        <li>LangChain · FAISS</li>
+                        <li>Vector databases</li>
+                        <li>Provenance grounding</li>
+                        <li>Model Context Protocol</li>
+                        <li>Hugging Face</li>
+                    </ul>
+                </div>
+                <div class="stack-col reveal">
+                    <h3 class="stack-h">engineering</h3>
+                    <ul class="stack-ul">
+                        <li>Python · NLP</li>
+                        <li>Flask · Streamlit</li>
+                        <li>Groq API · Claude API</li>
+                        <li>Relevance AI</li>
+                        <li>Next.js · Node.js</li>
+                        <li>Android (Java)</li>
+                    </ul>
+                </div>
+                <div class="stack-col reveal">
+                    <h3 class="stack-h">data &amp; platform</h3>
+                    <ul class="stack-ul">
+                        <li>SQL · MySQL</li>
+                        <li>Pandas · NumPy</li>
+                        <li>KPI monitoring</li>
+                        <li>GCP</li>
+                        <li>Git · VS Code</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="stack-edu reveal">
+                B.Tech, Computer Science — Jaypee Institute of Information Technology,
+                Noida <span class="stack-edu-yrs">(2019–2023)</span>
+            </p>
+        </section>
+
+        <!-- token stream ticker (reverse) -->
+        <div class="ticker ticker-reverse" aria-hidden="true">
+            <div class="ticker-track">
+                <span class="ticker-seg">prompt → chain → tool → answer&ensp;·&ensp;FAISS index warm&ensp;·&ensp;MCP servers connected&ensp;·&ensp;context window: full&ensp;·&ensp;multi-turn: stateful&ensp;·&ensp;shipped &gt; perfect&ensp;·&ensp;eval pass: 100%&ensp;·&ensp;latency: low&ensp;·&ensp;tokens/sec: plenty&ensp;·&ensp;</span>
+                <span class="ticker-seg">prompt → chain → tool → answer&ensp;·&ensp;FAISS index warm&ensp;·&ensp;MCP servers connected&ensp;·&ensp;context window: full&ensp;·&ensp;multi-turn: stateful&ensp;·&ensp;shipped &gt; perfect&ensp;·&ensp;eval pass: 100%&ensp;·&ensp;latency: low&ensp;·&ensp;tokens/sec: plenty&ensp;·&ensp;</span>
+            </div>
+        </div>
+
+        <!-- ===== Contact ===== -->
+        <section class="contact" id="contact">
+            <div class="contact-inner">
+                <header class="sect-head sect-head-dark reveal">
+                    <span class="sect-label">new.session</span>
+                    <span class="sect-tokens" aria-hidden="true">ctx: cleared</span>
+                </header>
+                <h2 class="contact-title reveal">
+                    Start a <em>new session</em>.<span class="caret" aria-hidden="true"></span>
+                </h2>
+                <p class="contact-sub reveal">
+                    Hiring for generative AI, prompt engineering, or LLM integration —
+                    or building something and want a second brain on the context layer?
+                </p>
+                <div class="contact-mail reveal">
+                    <a class="contact-mail-link" href="mailto:ratnakshtyagi69@gmail.com">ratnakshtyagi69@gmail.com</a>
+                    <button class="contact-copy" id="copyMail" type="button">copy</button>
+                </div>
+                <ul class="contact-links reveal">
+                    <li><a href="https://www.linkedin.com/in/ratnaksh-tyagi-bb350b371" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a></li>
+                    <li><a href="https://github.com/ratnaksh12" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></li>
+                    <li><a href="tel:+919997668836">+91 99976 68836</a></li>
+                    <li><a href="Resume.pdf" target="_blank" rel="noopener">Résumé <span aria-hidden="true">↗</span></a></li>
+                    <li><a href="cover-letter.html" target="_blank" rel="noopener">Cover letter <span aria-hidden="true">↗</span></a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="foot">
+        <span>© <span id="year">2026</span> Ratnaksh Tyagi</span>
+        <span class="foot-mid" aria-hidden="true">end_of_context</span>
+        <span>Meerut, India</span>
+    </footer>
+
+    <script src="script.js" defer></script>
+    <script type="module" src="three-scene.js"></script>
+</body>
+</html>

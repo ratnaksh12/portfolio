@@ -1,0 +1,72 @@
+RATNAKSH TYAGI 
+              ​
+​
+Meerut, India | 9997668836| ratnakshtyagi69@gmail.com |  LinkedIn  | Github 
+       
+         
+AI Engineer with 2+ years of experience building RAG architectures and state-aware conversational agents. Expert in 
+prompt/context engineering and metadata-driven memory to optimize LLM reliability and token efficiency. 
+TECHNICAL SKILLS 
+●​ Prompt & Context Engineering: Prompt Engineering, Context Engineering, System Prompts, Tool Prompts, 
+Memory Design, Multi-turn Conversational Logic, Token Optimization, Prompt Evaluation 
+●​ LLMs & RAG Systems: Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), LangChain, FAISS, 
+Vector Databases, Context Retrieval & Management, Provenance Grounding 
+●​ Programming & AI Development: Python, NLP, Flask, Streamlit, Groq API, Relevance AI 
+●​ Data & Analytics: SQL, MySQL, Pandas, NumPy, Data Analysis, Data Cleaning, KPI Monitoring 
+●​ Platforms & Tools: GCP, Git, VS Code 
+WORK EXPERIENCE 
+        AI Engineer | Xapotech Systems Pvt Ltd, Noida                                                                                 Nov,2023 - Present 
+●​ Designed and engineered system prompts, tool prompts, and layered context structures to improve output reliability, token 
+efficiency, and response consistency in LLM-based applications. 
+●​Built Retrieval-Augmented Generation (RAG) pipelines using LangChain and FAISS, enabling grounded, source-aware responses 
+with clear provenance. 
+●​Developed multi-turn, state-aware conversational agents with prompt chains and decision logic to handle complex user 
+workflows. 
+●​Implemented conversational memory and context management strategies to maintain continuity across sessions and interactions. 
+●​Evaluated and refined prompts through iterative testing, edge-case analysis, and basic guardrails to reduce hallucinations and 
+unsafe responses. 
+PROJECTS 
+     Investor Prep AI | LLMs | Prompt Engineering | RAG | React 
+●​
+Built an AI-powered pitch simulator using LLMs (Groq) to provide founders with real-time evaluation and investment 
+readiness feedback. 
+●​
+Engineered context-aware prompt logic to simulate realistic investor personas and generate tailored VC questions based on 
+pitch content. 
+●​
+Developed a multi-dimensional scoring engine that analyzes pitch quality and provides actionable metrics to increase 
+funding probability. 
+     RT Sales Copilot Agent | Prompt Engineering | Relevance AI 
+●​
+Engineered system and task-specific prompts to analyze company websites and LinkedIn profiles for pre-sales intelligence. 
+●​
+Designed prompt chains to extract, summarize, and contextualize business information into structured call preparation 
+reports. 
+●​
+Improved response relevance and consistency by refining context selection and prompt sequencing. 
+     Smart Calendar Scheduling Agent | Python | Flask | NLP | LLM 
+●​
+Built a conversational AI agent capable of managing calendar events through multi-turn natural language interactions 
+●​
+Implemented intent recognition and context persistence to handle scheduling modifications, clarifications, and follow-up 
+actions. 
+●​
+Designed prompt logic for state-aware conversations and decision-making across user intents. 
+    StudyPath: Study Abroad Platform | Next.js | Node.js | TypeScript | Prisma  
+●​
+Developed an AI-assisted counselor leveraging Gemini APIs to provide personalized university recommendations based on 
+complex academic profiles and geographic preferences. 
+●​
+Engineered a real-time application tracking dashboard to manage critical milestones for 100+ global institutions, reducing 
+process Friction through automated status updates. 
+●​
+Built a robust full-stack architecture with a Next.js frontend and Node.js backend, optimizing data retrieval for large-scale 
+university metadata and fee structures. 
+ 
+ 
+   EDUCATION 
+Bachelor of Technology in Computer Science​
+          2019 – 2023 
+Jaypee Institute of Information & Technology Noida-62 
+    CERTIFICATIONS & ACHIEVEMENTS 
+•​Generative AI - Udemy  

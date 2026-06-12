@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ratnaksh Tyagi — Cover Letter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --accent: #4a90ff;
+            --accent-dark: #3570cc;
+            --accent-gradient: linear-gradient(135deg, #4a90ff, #7c3aed);
+            --text-dark: #1a1a2e;
+            --text-body: #333344;
+            --text-muted: #6a6a8e;
+            --bg-page: #f0f2f8;
+            --bg-white: #ffffff;
+            --border-light: #e0e4ef;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-page);
+            color: var(--text-body);
+            line-height: 1.75;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ===== SCREEN TOOLBAR ===== */
+        .toolbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 16px 24px;
+            background: rgba(255,255,255,0.9);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border-light);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            z-index: 100;
+            gap: 16px;
+        }
+
+        .toolbar-left {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .toolbar-left a {
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            transition: opacity 0.2s;
+        }
+
+        .toolbar-left a:hover {
+            opacity: 0.7;
+        }
+
+        .toolbar-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text-dark);
+        }
+
+        .btn-download {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 24px;
+            background: var(--accent-gradient);
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            box-shadow: 0 4px 16px rgba(74, 144, 255, 0.3);
+        }
+
+        .btn-download:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 24px rgba(74, 144, 255, 0.4);
+        }
+
+        /* ===== LETTER PAGE ===== */
+        .page-wrapper {
+            display: flex;
+            justify-content: center;
+            padding: 90px 24px 60px;
+        }
+
+        .letter-page {
+            width: 100%;
+            max-width: 800px;
+            background: var(--bg-white);
+            border-radius: 12px;
+            box-shadow: 0 4px 40px rgba(0,0,0,0.06);
+            padding: 60px 60px 50px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Accent top bar */
+        .letter-page::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: var(--accent-gradient);
+        }
+
+        /* --- HEADER --- */
+        .letter-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 36px;
+            padding-bottom: 28px;
+            border-bottom: 2px solid var(--border-light);
+        }
+
+        .letter-name {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--text-dark);
+            line-height: 1.2;
+        }
+
+        .letter-role {
+            font-size: 1rem;
+            color: var(--accent);
+            font-weight: 600;
+            margin-top: 4px;
+        }
+
+        .letter-contact {
+            text-align: right;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            line-height: 1.9;
+        }
+
+        .letter-contact a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .letter-contact i {
+            width: 16px;
+            text-align: center;
+            margin-right: 6px;
+            color: var(--accent);
+        }
+
+        /* --- DATE & GREETING --- */
+        .letter-date {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 24px;
+        }
+
+        .letter-recipient {
+            margin-bottom: 24px;
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+
+        /* --- BODY --- */
+        .letter-body p {
+            margin-bottom: 18px;
+            font-size: 0.97rem;
+            color: var(--text-body);
+            text-align: justify;
+        }
+
+        .letter-body strong {
+            color: var(--text-dark);
+            font-weight: 600;
+        }
+
+        .letter-body .highlight {
+            color: var(--accent-dark);
+            font-weight: 600;
+        }
+
+        /* --- KEY HIGHLIGHTS BOX --- */
+        .highlights-box {
+            background: #f6f8ff;
+            border-left: 4px solid var(--accent);
+            border-radius: 0 8px 8px 0;
+            padding: 20px 24px;
+            margin: 24px 0;
+        }
+
+        .highlights-box h4 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.92rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .highlights-box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .highlights-box li {
+            padding: 5px 0;
+            padding-left: 22px;
+            position: relative;
+            font-size: 0.92rem;
+            color: var(--text-body);
+        }
+
+        .highlights-box li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-weight: 700;
+        }
+
+        /* --- CLOSING --- */
+        .letter-closing {
+            margin-top: 30px;
+        }
+
+        .letter-closing p {
+            margin-bottom: 4px;
+            font-size: 0.97rem;
+        }
+
+        .letter-signature {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-top: 12px;
+        }
+
+        .letter-signature-role {
+            font-size: 0.85rem;
+            color: var(--accent);
+            font-weight: 500;
+        }
+
+        /* ===== PRINT / PDF STYLES ===== */
+        @media print {
+            body {
+                background: #fff;
+            }
+
+            .toolbar {
+                display: none !important;
+            }
+
+            .page-wrapper {
+                padding: 0;
+            }
+
+            .letter-page {
+                box-shadow: none;
+                border-radius: 0;
+                max-width: 100%;
+                padding: 40px 50px;
+            }
+
+            .letter-page::before {
+                height: 4px;
+                print-color-adjust: exact;
+                -webkit-print-color-adjust: exact;
+            }
+
+            .highlights-box {
+                print-color-adjust: exact;
+                -webkit-print-color-adjust: exact;
+            }
+        }
+
+        /* ===== MOBILE ===== */
+        @media (max-width: 640px) {
+            .letter-page {
+                padding: 36px 28px 32px;
+            }
+
+            .letter-header {
+                flex-direction: column;
+                gap: 16px;
+            }
+
+            .letter-contact {
+                text-align: left;
+            }
+
+            .letter-name {
+                font-size: 1.6rem;
+            }
+
+            .toolbar-title {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Toolbar (hidden in print) -->
+    <div class="toolbar">
+        <div class="toolbar-left">
+            <a href="index.html"><i class="fas fa-arrow-left"></i> Portfolio</a>
+            <span class="toolbar-title">Cover Letter</span>
+        </div>
+        <button class="btn-download" onclick="window.print()">
+            <i class="fas fa-download"></i> Download PDF
+        </button>
+    </div>
+
+    <!-- Letter Content -->
+    <div class="page-wrapper">
+        <div class="letter-page">
+            <!-- Header -->
+            <div class="letter-header">
+                <div>
+                    <div class="letter-name">Ratnaksh Tyagi</div>
+                    <div class="letter-role">AI Engineer</div>
+                </div>
+                <div class="letter-contact">
+                    <div><i class="fas fa-envelope"></i><a href="mailto:ratnakshtyagi69@gmail.com">ratnakshtyagi69@gmail.com</a></div>
+                    <div><i class="fas fa-phone"></i>+91 99976 68836</div>
+                    <div><i class="fas fa-map-marker-alt"></i>Meerut, Uttar Pradesh, India</div>
+                    <div><i class="fab fa-linkedin-in"></i><a href="https://www.linkedin.com/in/ratnaksh-tyagi-bb350b371" target="_blank">linkedin.com/in/ratnaksh-tyagi</a></div>
+                    <div><i class="fab fa-github"></i><a href="https://github.com/ratnaksh12" target="_blank">github.com/ratnaksh12</a></div>
+                </div>
+            </div>
+
+            <!-- Date -->
+            <div class="letter-date">March 17, 2026</div>
+
+            <!-- Recipient -->
+            <div class="letter-recipient">
+                Dear Hiring Manager,
+            </div>
+
+            <!-- Body -->
+            <div class="letter-body">
+                <p>
+                    I am writing to express my strong interest in the <strong>AI Engineer</strong> position at your organization. With over <strong>2 years of hands-on experience</strong> building production-grade RAG architectures, state-aware conversational agents, and LLM-powered applications at <strong>Xapotech Systems Pvt Ltd</strong>, I am confident in my ability to contribute meaningfully to your AI initiatives from day one.
+                </p>
+
+                <p>
+                    In my current role, I specialize in <span class="highlight">prompt and context engineering</span> — designing layered system prompts, tool prompts, and memory architectures that maximize LLM reliability while minimizing token costs. I have built end-to-end <span class="highlight">Retrieval-Augmented Generation (RAG) pipelines</span> using LangChain and FAISS, enabling source-aware, provenance-grounded responses that clients can trust for mission-critical decisions.
+                </p>
+
+                <p>
+                    Beyond the core engineering work, I have developed multi-turn, state-aware conversational agents with sophisticated decision logic — handling complex user workflows that require context persistence across sessions. I continuously iterate on prompt quality through rigorous testing, edge-case analysis, and guardrail design to reduce hallucinations and unsafe outputs.
+                </p>
+
+                <div class="highlights-box">
+                    <h4>Key Highlights</h4>
+                    <ul>
+                        <li>Built an <strong>AI-powered pitch simulator</strong> (Investor Prep AI) using Groq LLMs, achieving real-time investor persona simulation and multi-dimensional scoring</li>
+                        <li>Engineered an <strong>intelligent sales copilot</strong> that analyzes websites and LinkedIn profiles, reducing pre-sales research time by automating call preparation reports</li>
+                        <li>Developed a <strong>Smart Calendar Agent</strong> with multi-turn NLP for managing events through conversational interactions</li>
+                        <li>Built <strong>StudyPath</strong> — a full-stack study abroad platform leveraging Gemini APIs to provide personalized university recommendations for 100+ global institutions</li>
+                        <li>Proficient in Python, LangChain, FAISS, Flask, Next.js, Node.js, SQL, GCP, and modern AI development tools</li>
+                    </ul>
+                </div>
+
+                <p>
+                    I hold a <strong>Bachelor of Technology in Computer Science</strong> from Jaypee Institute of Information Technology, Noida, supplemented by professional certifications in Generative AI. This academic foundation, combined with my practical experience in shipping AI products, positions me well to tackle complex challenges at the intersection of language models, retrieval systems, and user-facing applications.
+                </p>
+
+                <p>
+                    I am deeply passionate about the rapidly evolving AI landscape and thrive in environments that demand both creative problem-solving and rigorous engineering discipline. I would welcome the opportunity to discuss how my skills and experience align with your team's goals.
+                </p>
+
+                <p>
+                    Thank you for considering my application. I look forward to the possibility of contributing to your organization's success.
+                </p>
+            </div>
+
+            <!-- Closing -->
+            <div class="letter-closing">
+                <p>Warm regards,</p>
+                <div class="letter-signature">Ratnaksh Tyagi</div>
+                <div class="letter-signature-role">AI Engineer | Prompt & Context Engineering | RAG Systems</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
