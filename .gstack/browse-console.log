@@ -1,6 +1,0 @@
-[2026-06-12T16:17:39.583Z] [error] Access to script at 'file:///C:/Users/RATNAKSH%20TYAGI/portfolio/three-scene.js' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-untrusted, data, http, https.
-[2026-06-12T16:17:39.583Z] [error] Failed to load resource: net::ERR_FAILED
-[2026-06-12T16:18:13.399Z] [warning] [.WebGL-0x215c01726a00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
-[2026-06-12T16:18:13.420Z] [warning] [.WebGL-0x215c01726a00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
-[2026-06-12T16:18:13.444Z] [warning] [.WebGL-0x215c01726a00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
-[2026-06-12T16:18:13.471Z] [warning] [.WebGL-0x215c01726a00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)
