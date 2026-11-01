@@ -567,7 +567,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
 <script>
 (function(){
   // Profile links: fill these in to show LinkedIn / GitHub in the contact list.
-  const LINKS = { LinkedIn: "", GitHub: "" };
+  const LINKS = { LinkedIn: "https://www.linkedin.com/in/ratnaksh-tyagi-bb350b371", GitHub: "https://github.com/ratnaksh12", "Résumé (PDF)": "Resume.pdf" };
 
   const root = document.documentElement;
   root.classList.add('js');
@@ -578,7 +578,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
   const linksEl = document.getElementById('links');
   Object.entries(LINKS).forEach(([k,v])=>{ if(!v) return;
     const a=document.createElement('a'); a.href=v; a.target='_blank'; a.rel='noopener';
-    a.innerHTML='<span>'+k+'</span><span>'+v.replace(/^https?:\/\/(www\.)?/,'')+' ↗</span>'; linksEl.appendChild(a); });
+    a.innerHTML='<span>'+k+'</span><span>'+(/^https?:/.test(v)?v.replace(/^https?:\/\/(www\.)?/,'').replace(/-bb350b371$/,''):'Open')+' ↗</span>'; linksEl.appendChild(a); });
 
   // split name into chars
   let idx=0;
